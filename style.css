@@ -1,0 +1,151 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background-color: #ffffff;
+  width: 870px;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 21px;
+}
+.top-players {
+  margin-bottom: 28px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 17px;
+}
+
+/* top players style */
+.section-title {
+  color: #562eff;
+  font-size: 24px;
+  margin-top: 2px;
+}
+.players {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 28px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player-name {
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+/* --top blog style-- */
+.all-blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.blog {
+  display: flex;
+}
+.blog img {
+  width: 177px;
+  height: 117px;
+}
+.blog-info {
+  margin-left: 16px;
+}
+.blog-title {
+  font-size: 20px;
+}
+.blog-writter {
+  color: #9f9f9f;
+  font-size: 16px;
+}
+.blog-writter a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #562eff;
+}
+
+/* course styles */
+.all-courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 26px;
+  width: 252px;
+  /* height: 269px; */
+  /* margin-left: 35px; */
+}
+.course .course-cover-image img {
+  width: 224px;
+  height: 104px;
+}
+.course-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.yellow {
+  color: #ffc014;
+}
+.fa-star.grey {
+  color: #d3d3d3;
+  margin-right: 5px;
+}
+.course {
+  box-shadow: 5px 1px 25px #f0f0f0;
+  border-radius: 10px;
+  padding: 15px;
+}
+.course img {
+  padding-bottom: 1px;
+}
+.all-courses span {
+  color: #a2a2a2;
+  /* margin-right: 10px; */
+}
+.course-time {
+  background-color: #ffd4db;
+  border-radius: 50px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: #ff4a60;
+}
+.course-instructor {
+  color: #ed6b4f;
+}
+
+#number-field {
+  width: 30px;
+}
+/* --------------media queries---------- */
+
+/* mobile device */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .all-blogs,
+  .all-courses {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .player {
+    flex-direction: column;
+  }
+}

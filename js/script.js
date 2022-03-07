@@ -45,27 +45,27 @@
 // }
 // console.log(result);
 
-// const booksName = [
-//     "You Don't Know JavaScript",
-//     'Learn JAVASCRIPT Visually',
-//     'High-Performance Browser Networking',
-//     'Beginning JavaScript',
-//     'Eloquent JavaScript',
-//     'A Smarter Way to Learn JavaScript',
-//     'JS Enlightenment',
-//     'Functional Programming in JavaScript'
-// ];
-// const searching = 'javascript';
-// const result = [];
-// for (const book of booksName) {
-//     if (book.toLowerCase().indexOf(searching.toLowerCase())) {
-//         result.push(book);
-//     }
-// }
-// console.log(result);
+const booksName = [
+    "You Don't Know JavaScript",
+    'Learn JAVASCRIPT Visually',
+    'High-Performance Browser Networking',
+    'Beginning JavaScript',
+    'Eloquent JavaScript',
+    'A Smarter Way to Learn JavaScript',
+    'JS Enlightenment',
+    'Functional Programming in JavaScript'
+];
+const searching = 'javascript';
+const result = [];
+for (const book of booksName) {
+    if (book.toLowerCase().indexOf(searching.toLowerCase()) != -1) {
+        result.push(book);
+    }
+}
+console.log(result);
 
-const numbers = [56, 4, 2, 98, 67, 45, 92, 33];
-const sortedNumbers = numbers.sort(function (a, b) {
-    return a - b;
-})
-console.log(sortedNumbers);
+// const numbers = [56, 4, 2, 98, 67, 45, 92, 33];
+// const sortedNumbers = numbers.sort(function (a, b) {
+//     return a - b;
+// })
+// console.log(sortedNumbers);
